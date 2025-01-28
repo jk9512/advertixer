@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "League Spartan", serif !important;
 }
+ul,
+ol {
+  list-style: none;
+}
 .btn-primary {
   background: rgb(14, 238, 250);
   background: linear-gradient(
@@ -67,7 +71,13 @@ body::-webkit-scrollbar-thumb {
     rgba(0, 131, 157, 1) 100%
   );
 }
-
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-list .service-card {
+  padding: 20px 30px;
+}
 @media (max-width: 1399px) {
 }
 @media (max-width: 1199px) {
