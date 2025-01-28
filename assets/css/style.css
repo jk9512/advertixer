@@ -1,50 +1,63 @@
-.top-sec {
-  background-image: url(../images/top-bg.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 200px 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", serif !important;
 }
-.border-last {
-  border: 1px solid white;
-  top: 20px;
-  width: 50px;
-  left: -60px;
+.btn-primary {
+  background: rgb(14, 238, 250);
+  background: linear-gradient(
+    180deg,
+    rgba(14, 238, 250, 1) 0%,
+    rgba(0, 131, 157, 1) 100%
+  );
+  border: none;
 }
-.border-first {
-  border: 1px solid white;
-  top: 20px;
-  width: 50px;
-  right: -60px;
+.navbar-brand {
+  background: linear-gradient(
+    180deg,
+    rgba(14, 238, 250, 1) 0%,
+    rgba(0, 131, 157, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
 }
-.border-last-black {
-  border: 1px solid #6c757d !important;
-  top: 20px;
-  width: 50px;
-  left: -60px;
+.hero-subtitle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(14, 238, 250);
 }
-.border-first-black {
-  border: 1px solid #6c757d !important;
-  top: 20px;
-  width: 50px;
-  right: -60px;
+.h1.hero-title {
+  font-size: 5rem;
+  line-height: 1.2;
 }
-.navbar .navbar-nav a.active {
-  color: white;
+
+@media (max-width: 1399px) {
 }
-.navbar-brand img {
-  width: 150px;
+@media (max-width: 1199px) {
+  .h1.hero-title {
+    font-size: 3.4rem;
+    line-height: 1.2;
+  }
 }
-.navbar .navbar-nav a {
-  color: white;
+@media (max-width: 991px) {
+  .h1.hero-title {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
 }
-.bottom-feed {
-  width: fit-content;
-  display: flex;
-  transform: translate(-50%, 0%);
-  top: 50%;
-  left: 50%;
+@media (max-width: 767px) {
+  .h1.hero-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
 }
-.our-story-sec {
-  background-color: #76b39c;
+@media (max-width: 575px) {
 }
